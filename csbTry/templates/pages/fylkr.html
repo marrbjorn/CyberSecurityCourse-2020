@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>All listeners!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        
+        <h3>List of listeners</h3>
+        <ul>
+        {% for signup in signups %}
+        <li>{{signup | safe}}</li>
+        {% endfor %}
+        </ul>
+        <br />
+        <footer> <p><small>List of all listeners; for administrators <b><u>only</u></b>.</small></p></footer>
+        
+    </body>
+</html>
