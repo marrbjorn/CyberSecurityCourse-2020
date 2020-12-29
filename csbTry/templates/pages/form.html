@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Skal!</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="/static/css/style.css" type="text/css" media="screen"/>
+    </head>
+    <body data-background-original-idea="https://github.com/LeaVerou/css3patterns" style="background-color:#afd7e4; background-image:linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%); background-size:13px, 29px, 37px, 53px;">
+
+        <h1 id="welcome">Welcome!</h1>
+        <hr />
+        <p id="about">If you want to invite your friends - so, you are able to get access for them! Just add one more listener from you!</p>
+        
+        <form action="#" action="/form" method="POST">
+        {% csrf_token %}
+            <p><label for="name">Name</label>: <input type="text" name="name" id="name" required="required"/></p>
+            <p><input type="submit" value="Go!" /></p>
+        </form>
+    </body>
+</html>
